@@ -6,50 +6,78 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather Dashboard</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
 
     <body>
+        <!--Header Section-->
         <header>
             <h1>Weather Dashboard</h1>
         </header>
+
+        <!--Main Body Section-->
         <main class="user-interface">
 
+            <!--Search Section-->
             <section class="search-section">
                 <h2>Search for a city:</h2>
                 <form>
-                    <input type="text" id="city-search" name="city-search" value="Ottawa">
+                    <input type="text" id="city-search-text" name="city-search-text" value="Ottawa">
+                    <input type="submit" id="city-search-button" name="city-search-button" value="Search">
                 </form>
-                <button>Search</button>
                 <h3>test-saved-city</h3>
             </section>
 
+            <!--Data Section-->
             <section class="data-section">
 
+                <!--City Data Section-->
                 <article class="city-data">
                     <h2>test-city</h2>
                 </article>
 
+                <!--Weather Data Section-->
                 <article class="weather-forcast-data">
                     
                     <div id="weather-1">
-                        <h2>test-weather1</h2>
+                        <p>Date</p>
+                        <p>Img</p>
+                        <p>Temp</p>
+                        <p>Wind</p>
+                        <p>Humidity</p>
                     </div>
 
                     <div id="weather-2">
-                        <h2>test-weather2</h2>
+                        <p>Date</p>
+                        <p>Img</p>
+                        <p>Temp</p>
+                        <p>Wind</p>
+                        <p>Humidity</p>
                     </div>
 
                     <div id="weather-3">
-                        <h2>test-weather3</h2>
+                        <p>Date</p>
+                        <p>Img</p>
+                        <p>Temp</p>
+                        <p>Wind</p>
+                        <p>Humidity</p>
                     </div>
 
                     <div id="weather-4">
-                        <h2>test-weather4</h2>
+                        <p>Date</p>
+                        <p>Img</p>
+                        <p>Temp</p>
+                        <p>Wind</p>
+                        <p>Humidity</p>
                     </div>
 
                     <div id="weather-5">
-                        <h2>test-weather5</h2>
+                        <p>Date</p>
+                        <p>Img</p>
+                        <p>Temp</p>
+                        <p>Wind</p>
+                        <p>Humidity</p>
                     </div>
 
                 </article>
@@ -58,7 +86,7 @@
 
         </main>
 
+        <!--Scripts-->
         <script href="assets/js/script.js"></script>
     </body>
-
 </html>
