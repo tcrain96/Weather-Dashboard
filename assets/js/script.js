@@ -1,5 +1,10 @@
-//Pseudo Code
-// 1. User either clicks on search form or on a saved city search
-//      a. If user clicks on search form, highlight it and allow user to type city -> Once search is pressed, fetch data on that city and fill other divs
-//              -> Saved searched city in the search history
-//      b. if user clicks on saved city, fetch data for that city
+fetch("https://api.openweathermap.org/data/2.5/weather?q=Ottawa&appid=d6d30e15f062a8b6733a48e8507340b5")
+.then(function(response){
+    if(response.ok){
+        console.log(response);
+        response.json().then(function(data){
+            console.log(data);
+            console.log(data.weather[0].description);
+        }
+    )};
+});
