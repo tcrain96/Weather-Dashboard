@@ -57,6 +57,10 @@ main {
 .search-section {
   flex: 1;
 }
+.search-section h2 {
+  padding-top: 100px;
+  text-align: center;
+}
 .search-section form {
   padding-bottom: 10px;
   border-bottom: 3px solid var(--accent-color);
@@ -76,11 +80,29 @@ input[type="text"] {
   background-color: var(--background-color);
   font-weight: bold;
   font-size: 30px;
+  text-align: center;
 }
-
 input[type="submit"] {
   background-color: var(--accent-color);
   font-size: 20px;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="submit"]:hover,
+.search-section h3:hover {
+  background-color: var(--dark-background-color);
+}
+
+.error-text {
+  color: var(--white-color);
+  font-size: 30px;
+  text-align: center;
+}
+
+.error-text span {
+  color: var(--accent-color);
+  font-weight: bold;
 }
 
 /*Data Styles*/
@@ -88,39 +110,40 @@ input[type="submit"] {
   flex: 2;
   margin: 20px 0px 0px 20px;
 }
+
 .city-data {
   padding: 20px 20px;
   border: 3px solid var(--accent-color);
   font-size: 20px;
 }
+
 .city-data h2 {
   text-align: left;
 }
+
 .weather-forcast-data {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.weather-forcast-data h2 {
+  flex-basis: 100%;
+  font-size: 25px;
+}
+
 .weather-forcast-data div {
   padding: 50px 20px;
-  margin-top: 20px;
   background: var(--dark-background-color);
 }
+
 .weekly-weather p span {
   font-weight: bold;
   font-size: 18px;
 }
-.error-text {
-  color: var(--white-color);
-  font-size: 30px;
-  text-align: center;
-}
-.error-text span {
-  color: var(--accent-color);
-  font-weight: bold;
-}
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1700px) {
+  /*Global Styles*/
   body {
     margin: 20px 50px;
   }
@@ -134,8 +157,16 @@ input[type="submit"] {
   main {
     flex-direction: column;
   }
-  .data-section {
-    flex: 2;
-    margin: 0px;
+
+  /*Data Styles*/
+  .data-section,
+  .data-section h2 {
+    text-align: center;
+  }
+
+  .weekly-weather {
+    flex-basis: 100%;
+    margin-top: 10px;
+    text-align: center;
   }
 }
