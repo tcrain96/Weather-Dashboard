@@ -39,6 +39,7 @@ h3 {
 p {
   font-size: 16px;
   color: var(--white-color);
+  padding: 10px 0px;
 }
 
 /*Header Styles*/
@@ -88,9 +89,12 @@ input[type="submit"] {
   margin: 20px 0px 0px 20px;
 }
 .city-data {
-  padding: 100px 20px;
+  padding: 20px 20px;
   border: 3px solid var(--accent-color);
   font-size: 20px;
+}
+.city-data h2 {
+  text-align: left;
 }
 .weather-forcast-data {
   display: flex;
@@ -98,9 +102,22 @@ input[type="submit"] {
   flex-wrap: wrap;
 }
 .weather-forcast-data div {
-  padding: 100px 50px;
+  padding: 50px 20px;
   margin-top: 20px;
   background: var(--dark-background-color);
+}
+.weekly-weather p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.error-text {
+  color: var(--white-color);
+  font-size: 30px;
+  text-align: center;
+}
+.error-text span {
+  color: var(--accent-color);
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1500px) {
