@@ -1,0 +1,172 @@
+/*Global Styles*/
+:root {
+  --background-color: #282828;
+  --dark-background-color: #0a0a0a;
+  --light-background-color: #5b5a5a;
+  --accent-color: #e01646;
+  --white-color: #ffffff;
+}
+
+body {
+  margin: 20px 300px;
+  background-color: var(--background-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+  background: var(--light-background-color);
+  padding: 10px 0px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  color: var(--white-color);
+  padding: 20px 0px;
+}
+
+p {
+  font-size: 16px;
+  color: var(--white-color);
+  padding: 10px 0px;
+}
+
+/*Header Styles*/
+header {
+  background-color: var(--dark-background-color);
+  text-align: center;
+}
+
+/*Main Styles*/
+main {
+  display: flex;
+}
+
+/*Search Styles*/
+.search-section {
+  flex: 1;
+}
+.search-section h2 {
+  padding-top: 100px;
+  text-align: center;
+}
+.search-section form {
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+input[type="text"],
+input[type="submit"] {
+  outline-style: none;
+  width: 100%;
+  padding: 30px 0px;
+  margin: 10px 0px;
+  border: 3px solid var(--accent-color);
+  color: var(--white-color);
+}
+
+input[type="text"] {
+  background-color: var(--background-color);
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+input[type="submit"] {
+  background-color: var(--accent-color);
+  font-size: 20px;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="submit"]:hover,
+.search-section h3:hover {
+  background-color: var(--dark-background-color);
+}
+
+.error-text {
+  color: var(--white-color);
+  font-size: 30px;
+  text-align: center;
+}
+
+.error-text span {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/*Data Styles*/
+.data-section {
+  flex: 2;
+  margin: 20px 0px 0px 20px;
+}
+
+.city-data {
+  padding: 20px 20px;
+  border: 3px solid var(--accent-color);
+  font-size: 20px;
+}
+
+.city-data h2 {
+  text-align: left;
+}
+
+.weather-forcast-data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.weather-forcast-data h2 {
+  flex-basis: 100%;
+  font-size: 25px;
+}
+
+.weather-forcast-data div {
+  padding: 50px 20px;
+  background: var(--dark-background-color);
+}
+
+.weekly-weather p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1700px) {
+  /*Global Styles*/
+  body {
+    margin: 20px 50px;
+  }
+  h1,
+  h2,
+  h3,
+  input[type="text"] {
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  /*Data Styles*/
+  .data-section,
+  .data-section h2 {
+    text-align: center;
+  }
+
+  .weekly-weather {
+    flex-basis: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+}

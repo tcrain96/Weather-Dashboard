@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Dashboard</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <!--Header Section-->
+        <header>
+            <h1>Weather Dashboard</h1>
+        </header>
+
+        <!--Main Body Section-->
+        <main class="user-interface">
+
+            <!--Search Section-->
+            <section class="search-section">
+                <h2>Search for a city:</h2>
+                <form>
+                    <input type="text" id="city-search-text" onfocus="this.value=''" name="city-search-text" value="Enter City Name Here">
+                    <input type="submit" id="city-search-button" name="city-search-button" value="Search">
+                </form>
+            </section>
+
+            <!--Data Section-->
+            <section class="data-section">
+
+                <!--City Data Section-->
+                <article class="city-data">
+                </article>
+
+                <!--Weather Data Section-->
+                <article class="weather-forcast-data">
+                    
+                    <h2>5-Day Forecast:</h2>
+
+                    <div class="weekly-weather">
+                    </div>
+
+                    <div class="weekly-weather">
+                    </div>
+
+                    <div class="weekly-weather">
+                    </div>
+
+                    <div class="weekly-weather">
+                    </div>
+
+                    <div class="weekly-weather">
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+    <!--Scripts-->
+    <script src="assets/js/script.js"></script>
+
+    </body>
+    
+</html>
