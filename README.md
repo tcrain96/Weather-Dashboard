@@ -1,4 +1,4 @@
-A Weather Dashboard that allows a user to input any city name in the world, and to view that city's current weather, as well as it's 5 day weather forcast.
+A Weather Dashboard that allows a user to input any city name in the world, and to view that city's current weather, as well as it's 5 day weather forecast.
 
 https://tcrain96.github.io/weather-dashboard/
 
